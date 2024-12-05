@@ -1,0 +1,18 @@
+name: CI/CD
+
+on: [push]
+
+jobs:
+  show-info:
+    runs-on: ubuntu-latest
+    steps:
+      - name: username
+        run: echo "Nombre de usuario -> ${{ github.actor }}"
+      - name: repository
+        run: echo "Nombre del repositorio -> ${{ github.repository }}"
+      - name: branch
+        run: echo "Nombre de la rama -> ${{ github.ref }}"
+        
+        
+  
+    
